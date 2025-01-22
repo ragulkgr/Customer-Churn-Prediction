@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About ChurnPredictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+</head>
+
+<body>
+    <!-- Header Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='Images/logo.jpeg') }}" alt="Logo" class="logo-image"> ChurnPredictor
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <div class="container">
+        <h1 class="section-title">About This Project</h1>
+        <p class="section-description">
+            This project explores the dynamics of customer retention within the financial industry. By leveraging a binary classification model, 
+            it predicts customer churn and provides valuable insights into customer loyalty and relationship management. This analysis 
+            empowers organizations to address challenges in maintaining customer engagement effectively.
+        </p>
+        <h2 class="section-subtitle">How It Works</h2>
+        <p class="section-description">
+            The application allows users to input customer details such as age, geography, gender, number of products, balance, and whether the 
+            customer is active or not. It utilizes a trained machine learning model to predict whether the customer is likely to churn or remain with the bank. 
+            The prediction result is displayed, helping stakeholders make informed decisions.
+        </p>
+    </div>
+
+     <!-- Footer Section -->
+     <footer class="footer">
+        <p>&copy; 2024 ChurnPredictor. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
