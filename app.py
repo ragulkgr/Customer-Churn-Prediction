@@ -5,8 +5,7 @@ import pandas as pd
 app = Flask(__name__)
 
 
-with open("model\model.pkl", "rb") as f:
-    model = pickle.load(f)
+model=pickle.load(open("model/xgb_model.pkl", "rb"))
 
 features = model.feature_names_in_
 
