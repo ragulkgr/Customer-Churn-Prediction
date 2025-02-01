@@ -1,12 +1,11 @@
 import pickle
 from flask import Flask, render_template, request
 import pandas as pd
-import bz2
 
 app = Flask(__name__)
 
 
-with bz2.BZ2File(r"model\xgb_model.pkl.bz2", "rb") as f:
+with open("model\model.pkl", "rb") as f:
     model = pickle.load(f)
 
 features = model.feature_names_in_
